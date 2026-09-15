@@ -62,6 +62,9 @@ También se estableció la rama principal mediante:
 git branch -M main
 ```
 ## 10. Explicación de la sincronización Local → GitHub
+
+La sincronización de un repositorio local hacia GitHub consiste en enviar los cambios que tenemos guardados en nuestra computadora al repositorio en línea. Después de hacer un commit, utilizamos git push -u origin main para subir esos cambios a GitHub y tenerlos disponibles también en la nube.
+
 Para enviar los cambios realizados en el equipo hacia GitHub se utilizó:
 ```text
 git push -u origin main
@@ -69,6 +72,9 @@ git push -u origin main
 Este comando envía los commits de la rama `main` del repositorio local al repositorio remoto de GitHub.
 
 ## 11. Explicación de la sincronización GitHub → Local
+
+ Esta sincronización funciona al contrario. Si hacemos cambios en GitHub o existen cambios nuevos en el repositorio, podemos descargarlos a nuestra computadora utilizando git pull origin main. De esta manera podemos continuar trabajando con los archivos desde nuestro repositorio local.
+ 
 Para obtener cambios realizados en el repositorio remoto se utiliza:
 
 ```text
