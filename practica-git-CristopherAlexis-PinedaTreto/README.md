@@ -1,15 +1,18 @@
-## 1. **Cristopher Alexis Pineda Treto**
-## 2. **263007**
-## 3. **Creación y sincronización de un repositorio local con Git y GitHub utilizando PowerShell**
+## 1.Nombre: **Cristopher Alexis Pineda Treto**
+## 2.Matricula: **263007**
+## 3.Titulo: **Creación y sincronización de un repositorio local con Git y GitHub utilizando PowerShell**
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## 4. Objetivo 
 Aprender a utilizar comandos básicos de PowerShell para crear y administrar carpetas, así como utilizar Git para crear un repositorio local, controlar versiones y sincronizarlo con un repositorio remoto en GitHub.
+--------------------------------
 ## 5. Descripción 
 Primero se abrió PowerShell y se utilizó para ubicarse en el escritorio y crear la carpeta destinada a la práctica. Posteriormente se ingresó a la carpeta creada y se configuró Git con el nombre y correo electrónico del usuario.
 Después se inicializó el repositorio local utilizando `git init`. Se crearon y agregaron los archivos necesarios para la práctica y se verificó el estado del repositorio mediante `git status`.
 Los archivos fueron agregados al área de preparación mediante `git add` y posteriormente se creó un commit para guardar los cambios.
 Finalmente, se creó un repositorio en GitHub y se vinculó con el repositorio local utilizando `git remote add origin`. Después se utilizó `git push` para sincronizar el repositorio local con GitHub y `git pull` para obtener cambios desde GitHub hacia el repositorio local.
-
+-------------------------------------------
 ## 6. Comandos de Git 
+
 ### Comandos 
 ```text
 git config --global user.name "Nombre"
@@ -22,7 +25,8 @@ git remote add origin URL_DEL_REPOSITORIO
 git branch -M main
 git push -u origin main
 git pull origin main
-```
+´´´
+-------------------------------------------
 ## 7. Explicación de la función
 
 * **git config --global user.name:** establece el nombre del usuario para Git.
@@ -50,6 +54,8 @@ git init
 ```
 Este comando creó el repositorio local de Git y permitió comenzar a llevar un control de versiones de los archivos de la práctica.
 
+---------------------------------------------------
+
 ## 9. Explicación de cómo se vinculó el repositorio local con GitHub
 Después de crear el repositorio en GitHub, se utilizó el comando:
 
@@ -61,6 +67,7 @@ También se estableció la rama principal mediante:
 ```text
 git branch -M main
 ```
+-----------------------------------------------------
 ## 10. Explicación de la sincronización Local → GitHub
 
 La sincronización de un repositorio local hacia GitHub consiste en enviar los cambios que tenemos guardados en nuestra computadora al repositorio en línea. Después de hacer un commit, utilizamos git push -u origin main para subir esos cambios a GitHub y tenerlos disponibles también en la nube.
@@ -70,7 +77,7 @@ Para enviar los cambios realizados en el equipo hacia GitHub se utilizó:
 git push -u origin main
 ```
 Este comando envía los commits de la rama `main` del repositorio local al repositorio remoto de GitHub.
-
+-----------------------------------------------------
 ## 11. Explicación de la sincronización GitHub → Local
 
  Esta sincronización funciona al contrario. Si hacemos cambios en GitHub o existen cambios nuevos en el repositorio, podemos descargarlos a nuestra computadora utilizando git pull origin main. De esta manera podemos continuar trabajando con los archivos desde nuestro repositorio local.
@@ -81,12 +88,12 @@ Para obtener cambios realizados en el repositorio remoto se utiliza:
 git pull origin main
 ```
 Este comando descarga los cambios de GitHub y los integra en el repositorio local.
-
+-----------------------------------------------------
 ## 12. Descripción de los archivos contenidos en el repositorio
 El repositorio contiene los archivos utilizados durante la práctica:
 * **README.md:** contiene información, instrucciones y documentación relacionada con la práctica.
 * **datos.txt:** contiene los datos utilizados como parte de la práctica y permite comprobar el funcionamiento del control de versiones.
-
+---------------------------------------------------------
 ## Conclusión personal
 Con esta práctica aprendí a utilizar Git para controlar los cambios realizados en los archivos de un proyecto y a sincronizar un repositorio local con GitHub.
 También comprendí la función de los comandos principales, como `git init`, `git add`, `git commit`, `git push` y `git pull`.
